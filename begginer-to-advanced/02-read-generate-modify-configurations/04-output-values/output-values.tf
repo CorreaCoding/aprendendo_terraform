@@ -3,9 +3,9 @@ provider "aws" {
 }
 
 resource "aws_eip" "eip" {
-  domain   = "vpc"
+  domain = "vpc"
 }
 
-output "public-ip"{
-    value = aws_eip.eip.public_ip
+output "public-ip" {
+  value = aws_eip.eip.public_ip
 }

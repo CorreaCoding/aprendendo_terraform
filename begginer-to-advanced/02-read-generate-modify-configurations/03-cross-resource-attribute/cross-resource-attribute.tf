@@ -3,7 +3,7 @@ provider "aws" {
 }
 
 resource "aws_eip" "elastic_ip" {
-  domain   = "vpc"
+  domain = "vpc"
 }
 
 resource "aws_security_group" "security_group" {
